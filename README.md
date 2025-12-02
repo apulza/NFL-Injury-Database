@@ -114,6 +114,7 @@ ORDER BY total_wins DESC;
 ## 📁 Repository Contents
 
 ```
+├── NFLRosterMerger.java               # Script
 ├── NFL_project_setup.sql              # Database creation and data insertion
 ├── questions.sql                      # Analysis queries
 ├── db_project_report.pdf              # Full project report
