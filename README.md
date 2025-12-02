@@ -141,11 +141,11 @@ cd NFL-Injury-Database
 mysql -u your_username -p < NFL_project_setup.sql
 
 2. **Option B - Build from CSV files** (requires CSV data files):
-# Compile and run Java merger first
+Compile and run Java merger first
 javac NFLRosterMerger.java
 java NFLRosterMerger
 
-# Then create database with CSV loading
+Then create database with CSV loading
 mysql -u your_username -p < NFL_project_setup_start.sql
 
 3. Run analysis queries:
