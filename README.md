@@ -170,30 +170,6 @@ mysql -u your_username -p nflinjury < questions.sql
 - Injury management appears critical for competitive success
 - Position-specific injury rates suggest targeted prevention strategies needed
 
-## ⚠️ Limitations
-
-- Single season of data limits longitudinal trend analysis
-- Player trades/team switches add complexity to team-level analysis
-- NFL injury reporting may vary by team transparency
-- Injury severity beyond game status not captured
-- Week numbering would need modification for multi-season database
-
-## 🔮 Future Enhancements
-
-- Add multiple seasons for trend analysis over time
-- Incorporate injury recovery time tracking
-- Add weather data to examine environmental factors
-- Include home vs. away game injury rates
-- Track injury impact on individual game outcomes
-- Implement stored procedures for common queries
-- Add views for frequently accessed data patterns
-
-## 👥 Team Contributions
-
-- **Francis Bunker & Luis Li**: Data collection, database implementation, data cleaning and integration
-- **Siddharth Patel & Aryan Ramsinghani**: Query development, analysis questions, findings interpretation
-- **All members**: Report writing, presentation, collaborative design
-
 ## 📝 License
 
 This project was created for educational purposes as part of CS3200 at Northeastern University.
