@@ -134,22 +134,20 @@ ORDER BY total_wins DESC;
 ### Installation
 
 1. Clone the repository:
-git clone https://github.com/apulza/NFL-Injury-Database.git
-cd NFL-Injury-Database
+```bash
+git clone https://github.com/apulza/nfl-injury-database.git
+cd nfl-injury-database
+```
 
-2. **Option A - Load complete database** (recommended):
+2. Create and populate the database:
+```bash
 mysql -u your_username -p < NFL_project_setup.sql
-
-2. **Option B - Build from CSV files** (requires CSV data files):
-Compile and run Java merger first
-javac NFLRosterMerger.java
-java NFLRosterMerger
-
-Then create database with CSV loading
-mysql -u your_username -p < NFL_project_setup_start.sql
+```
 
 3. Run analysis queries:
+```bash
 mysql -u your_username -p nflinjury < questions.sql
+```
 
 
 ## 🔍 Analysis Questions Answered
