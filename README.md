@@ -3,7 +3,7 @@
 A comprehensive relational database analyzing injury patterns across the 2024 NFL regular season. This project examines over 3,440 injury reports spanning 18 weeks to uncover relationships between injuries, player characteristics, and team performance.
 
 ## 🎥 Project Presentation
-https://www.youtube.com/watch?v=hnI4JNenVm4&feature=youtu.be
+**[Watch our 10-minute presentation on YouTube](https://www.youtube.com/watch?v=hnI4JNenVm4)**
 
 ## 📊 Project Overview
 
