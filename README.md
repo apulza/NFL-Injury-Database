@@ -65,9 +65,11 @@ As sports enthusiasts, we recognized the significant impact injuries have on NFL
    - Includes all players who played at least one game during the season
 
 3. **Data Integration**:
-   - Custom Java programs match player names to unique IDs
+   - Custom Java programs (`NFLRosterMerger.java`) match player names to unique IDs
+   - Merges roster data from all 32 teams into unified player and player_on_team tables
    - Handles data inconsistencies and formatting differences
    - Generates SQL insert statements for database population
+   - Creates mappings to handle players who switched teams mid-season
 
 ## 📈 Sample Queries
 
@@ -114,8 +116,9 @@ ORDER BY total_wins DESC;
 ## 📁 Repository Contents
 
 ```
-├── NFLRosterMerger.java               # Script
-├── NFL_project_setup.sql              # Database creation and data insertion
+├── NFL_project_setup.sql              # Database creation and data insertion (final)
+├── NFL_project_setup_start.sql        # Initial database schema with CSV loading
+├── NFLRosterMerger.java               # Java program for player ID mapping
 ├── questions.sql                      # Analysis queries
 ├── db_project_report.pdf              # Full project report
 ├── NFL_Injury_Database_Slides.pdf     # Presentation slides
@@ -131,18 +134,21 @@ ORDER BY total_wins DESC;
 ### Installation
 
 1. Clone the repository:
-```bash
 git clone https://github.com/apulza/NFL-Injury-Database.git
 cd NFL-Injury-Database
-```
 
-2. Create and populate the database:
-```bash
+2. **Option A - Load complete database** (recommended):
 mysql -u your_username -p < NFL_project_setup.sql
-```
+
+2. **Option B - Build from CSV files** (requires CSV data files):
+# Compile and run Java merger first
+javac NFLRosterMerger.java
+java NFLRosterMerger
+
+# Then create database with CSV loading
+mysql -u your_username -p < NFL_project_setup_start.sql
 
 3. Run analysis queries:
-```bash
 mysql -u your_username -p nflinjury < questions.sql
 ```
 
