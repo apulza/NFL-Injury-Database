@@ -2,6 +2,9 @@
 
 A comprehensive relational database analyzing injury patterns across the 2024 NFL regular season. This project examines over 3,440 injury reports spanning 18 weeks to uncover relationships between injuries, player characteristics, and team performance.
 
+## 🎥 Project Presentation
+https://www.youtube.com/watch?v=hnI4JNenVm4&feature=youtu.be
+
 ## 📊 Project Overview
 
 As sports enthusiasts, we recognized the significant impact injuries have on NFL teams. This database project aims to:
@@ -111,11 +114,11 @@ ORDER BY total_wins DESC;
 ## 📁 Repository Contents
 
 ```
-├── NFL_project_setup.sql        # Database creation and data insertion
-├── questions.sql                # Analysis queries
-├── db_project_report.docx       # Full project report
-├── presentation.pdf             # Presentation slides
-└── README.md                    # This file
+├── NFL_project_setup.sql              # Database creation and data insertion
+├── questions.sql                      # Analysis queries
+├── db_project_report.pdf              # Full project report
+├── NFL_Injury_Database_Slides.pdf     # Presentation slides
+└── README.md                          # This file
 ```
 
 ## 🚀 Getting Started
@@ -128,8 +131,8 @@ ORDER BY total_wins DESC;
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/nfl-injury-database.git
-cd nfl-injury-database
+git clone https://github.com/apulza/NFL-Injury-Database.git
+cd NFL-Injury-Database
 ```
 
 2. Create and populate the database:
