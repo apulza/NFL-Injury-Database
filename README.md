@@ -135,14 +135,15 @@ ORDER BY total_wins DESC;
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/apulza/nfl-injury-database.git
-cd nfl-injury-database
+git clone https://github.com/apulza/NFL-Injury-Database.git
+cd NFL-Injury-Database
 ```
 
 2. Create and populate the database:
 ```bash
 mysql -u your_username -p < NFL_project_setup.sql
 ```
+This creates the complete database with all 2024 season data already populated
 
 3. Run analysis queries:
 ```bash
