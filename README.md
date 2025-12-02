@@ -150,7 +150,7 @@ mysql -u your_username -p < NFL_project_setup_start.sql
 
 3. Run analysis queries:
 mysql -u your_username -p nflinjury < questions.sql
-```
+
 
 ## 🔍 Analysis Questions Answered
 
